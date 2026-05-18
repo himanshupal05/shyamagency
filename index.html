@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>SHYAM AGENCY | Sabhyata Live Official Agency</title>
+
+<!-- SEO -->
+<meta name="description" content="SHYAM AGENCY - Professional Sabhyata Live Streaming Agency with PK Battles, Host Support, Events, Rewards & High Earnings."/>
+<meta name="keywords" content="Sabhyata Live, Live Streaming Agency, PK Battle, Host Agency, SHYAM AGENCY"/>
+<meta name="theme-color" content="#0b1120"/>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--primary:#8b5cf6;
+--secondary:#ec4899;
+--dark:#050816;
+--card:#111827;
+--light:#cbd5e1;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:var(--dark);
+color:#fff;
+overflow-x:hidden;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:linear-gradient(var(--primary),var(--secondary));
+border-radius:20px;
+}
+
+/* NAVBAR */
+
+.navbar{
+padding:12px 0;
+transition:0.4s;
+background:rgba(0,0,0,0.15);
+backdrop-filter:blur(10px);
+}
+
+.navbar.scrolled{
+background:#060816;
+padding:12px 0;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.navbar-brand{
+font-size:30px;
+font-weight:800;
+color:#fff !important;
+letter-spacing:1px;
+}
+
+.navbar-brand span{
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.nav-link{
+color:#fff !important;
+margin:0 12px;
+font-weight:500;
+position:relative;
+}
+
+.nav-link::after{
+content:'';
+position:absolute;
+left:0;
+bottom:-5px;
+width:0%;
+height:2px;
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+transition:0.4s;
+}
+
+.nav-link:hover::after{
+width:100%;
+}
+
+/* HERO */
+
+/* HERO SECTION */
+
+.hero{
+position:relative;
+width:100%;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
+padding:120px 0 80px;
+
+background:
+linear-gradient(rgba(5,8,22,0.70),rgba(5,8,22,0.82)),
+url('hero.jpeg');
+
+background-size:contain;
+background-position:center center;
+background-repeat:no-repeat;
+background-color:#050816;
+background-attachment:scroll;
+}
+
+.hero::before{
+content:'';
+position:absolute;
+width:500px;
+height:500px;
+background:rgba(139,92,246,0.15);
+filter:blur(120px);
+top:-100px;
+right:-100px;
+border-radius:50%;
+animation:float 6s infinite ease-in-out;
+}
+
+.hero::after{
+content:'';
+position:absolute;
+width:400px;
+height:400px;
+background:rgba(236,72,153,0.12);
+filter:blur(120px);
+bottom:-100px;
+left:-100px;
+border-radius:50%;
+animation:float2 8s infinite ease-in-out;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(30px);}
+100%{transform:translateY(0);}
+}
+
+@keyframes float2{
+0%{transform:translateX(0);}
+50%{transform:translateX(40px);}
+100%{transform:translateX(0);}
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero-tag{
+display:inline-block;
+padding:10px 22px;
+border-radius:50px;
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.1);
+margin-bottom:25px;
+font-size:14px;
+backdrop-filter:blur(10px);
+}
+
+.hero h1{
+font-size:68px;
+font-weight:800;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero h1 span{
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+font-size:18px;
+color:var(--light);
+max-width:650px;
+line-height:1.8;
+margin-bottom:35px;
+}
+
+.btn-main{
+padding:16px 38px;
+border:none;
+border-radius:60px;
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+color:#fff;
+font-weight:600;
+text-decoration:none;
+display:inline-block;
+transition:0.4s;
+box-shadow:0 10px 30px rgba(139,92,246,0.4);
+}
+
+.btn-main:hover{
+transform:translateY(-5px);
+color:#fff;
+}
+
+.btn-outline-custom{
+padding:16px 38px;
+border-radius:60px;
+border:1px solid rgba(255,255,255,0.2);
+color:#fff;
+text-decoration:none;
+margin-left:15px;
+transition:0.4s;
+}
+
+.btn-outline-custom:hover{
+background:#fff;
+color:#000;
+}
+
+/* STATS */
+
+.stats{
+padding:90px 0;
+background:#0b1120;
+}
+
+.stat-box{
+background:rgba(255,255,255,0.03);
+padding:40px 30px;
+border-radius:25px;
+text-align:center;
+transition:0.4s;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.stat-box:hover{
+transform:translateY(-10px);
+background:#111827;
+}
+
+.stat-box i{
+font-size:45px;
+margin-bottom:20px;
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.stat-box h2{
+font-size:42px;
+font-weight:700;
+}
+
+/* COMMON */
+
+.section{
+padding:110px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:70px;
+}
+
+.section-title h2{
+font-size:52px;
+font-weight:800;
+margin-bottom:15px;
+}
+
+.section-title p{
+color:var(--light);
+}
+
+/* ABOUT */
+
+.about-img{
+overflow:hidden;
+border-radius:30px;
+position:relative;
+}
+
+.about-img img{
+width:100%;
+transition:0.5s;
+}
+
+.about-img:hover img{
+transform:scale(1.08);
+}
+
+.about-content h3{
+font-size:42px;
+font-weight:700;
+margin-bottom:25px;
+}
+
+.about-content p{
+color:var(--light);
+line-height:1.9;
+}
+
+/* SERVICES */
+
+.services{
+background:#0b1120;
+}
+
+.service-card{
+background:var(--card);
+padding:40px 35px;
+border-radius:25px;
+height:100%;
+transition:0.5s;
+position:relative;
+overflow:hidden;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.service-card::before{
+content:'';
+position:absolute;
+width:120px;
+height:120px;
+background:rgba(139,92,246,0.12);
+border-radius:50%;
+top:-50px;
+right:-50px;
+}
+
+.service-card:hover{
+transform:translateY(-12px);
+}
+
+.service-card i{
+font-size:50px;
+margin-bottom:20px;
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.service-card h4{
+font-size:24px;
+margin-bottom:15px;
+font-weight:700;
+}
+
+.service-card p{
+color:var(--light);
+line-height:1.7;
+}
+
+/* HOSTS */
+
+.host-card{
+background:var(--card);
+padding:40px 30px;
+border-radius:25px;
+text-align:center;
+transition:0.5s;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.host-card:hover{
+transform:translateY(-10px);
+}
+
+.host-card img{
+width:110px;
+height:110px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid var(--primary);
+margin-bottom:20px;
+}
+
+.host-card h4{
+font-weight:700;
+margin-bottom:10px;
+}
+
+.host-card p{
+color:var(--light);
+}
+
+/* CONTACT LINK */
+
+.contact-link{
+text-decoration:none;
+color:#ffffff;
+display:block;
+border-radius:25px;
+transition:0.4s;
+}
+
+/* CONTACT BOX */
+
+.contact-box{
+background:#111827;
+padding:45px 30px;
+border-radius:25px;
+text-align:center;
+transition:0.4s;
+height:100%;
+border:1px solid rgba(255,255,255,0.05);
+overflow:hidden;
+position:relative;
+}
+
+/* HOVER EFFECT */
+
+.contact-link:hover .contact-box{
+transform:translateY(-10px);
+background:linear-gradient(145deg,#111827,#1e293b);
+border:1px solid rgba(139,92,246,0.5);
+box-shadow:0 15px 40px rgba(139,92,246,0.25);
+}
+
+/* ICON */
+
+.contact-box i{
+font-size:45px;
+margin-bottom:20px;
+background:linear-gradient(45deg,#8b5cf6,#ec4899);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+transition:0.4s;
+}
+
+/* ICON HOVER */
+
+.contact-link:hover i{
+transform:scale(1.15);
+filter:drop-shadow(0 0 12px rgba(168,85,247,0.8));
+}
+
+/* TEXT */
+
+.contact-link h4,
+.contact-link p{
+color:#ffffff;
+text-decoration:none;
+}
+
+/* MOBILE */
+
+@media(max-width:576px){
+
+.contact-box{
+padding:35px 20px;
+}
+
+}
+/* FOOTER */
+
+footer{
+padding:50px 0 30px;
+background:#04070f;
+border-top:1px solid rgba(255,255,255,0.05);
+text-align:center;
+}
+
+.social-icons a{
+width:50px;
+height:50px;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:#111827;
+color:#fff;
+margin:0 8px;
+font-size:18px;
+transition:0.4s;
+text-decoration:none;
+}
+
+.social-icons a:hover{
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+transform:translateY(-5px);
+}
+
+/* FLOATING BUTTONS */
+
+.whatsapp-btn,
+.call-btn{
+position:fixed;
+right:20px;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-size:26px;
+z-index:999;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+animation:pulse 2s infinite;
+}
+
+.whatsapp-btn{
+bottom:20px;
+background:#25D366;
+}
+
+.call-btn{
+bottom:95px;
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+}
+
+@keyframes pulse{
+0%{
+transform:scale(1);
+}
+50%{
+transform:scale(1.08);
+}
+100%{
+transform:scale(1);
+}
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+
+.hero{
+text-align:center;
+padding:120px 0;
+background-attachment:scroll;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero p{
+margin:auto auto 35px;
+}
+
+.section-title h2{
+font-size:38px;
+}
+
+.about-content{
+margin-top:40px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:15px;
+}
+
+.btn-main,
+.btn-outline-custom{
+display:block;
+margin:10px auto;
+width:100%;
+text-align:center;
+}
+
+.section-title h2{
+font-size:30px;
+}
+
+.navbar-brand{
+font-size:24px;
+}
+
+}
+
+/* MOBILE RESPONSIVE HERO */
+
+@media(max-width:991px){
+
+.hero{
+min-height:auto;
+padding-top:120px;
+padding-bottom:70px;
+text-align:center;
+
+background-size:100% auto;
+background-position:top center;
+}
+
+.hero-content{
+padding:20px;
+}
+
+.hero h1{
+font-size:34px;
+line-height:1.3;
+}
+
+.hero p{
+font-size:15px;
+line-height:1.8;
+}
+
+.btn-main,
+.btn-outline-custom{
+display:block;
+width:100%;
+margin:12px auto;
+text-align:center;
+}
+
+}
+/* LOGO */
+
+.logo-img{
+width:55px;
+height:55px;
+object-fit:contain;
+border-radius:12px;
+}
+
+/* BRAND TEXT */
+
+.navbar-brand{
+font-size:28px;
+font-weight:800;
+color:#ffffff !important;
+display:flex;
+align-items:center;
+}
+
+.logo-text{
+background:linear-gradient(45deg,#8b5cf6,#ec4899);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+/* MOBILE */
+
+@media(max-width:576px){
+
+.logo-img{
+width:45px;
+height:45px;
+}
+
+.navbar-brand{
+font-size:22px;
+}
+
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+<div class="container">
+
+<a class="navbar-brand" href="#">
+<img src="logo.jpeg" alt="SHYAM AGENCY LOGO" class="logo-img">    
+<i class="fa-solid fa-video"></i> <span>SHYAM</span> AGENCY
+</a>
+
+<button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navMenu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#about">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#services">Services</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#hosts">Hosts</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contact">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-8">
+
+<div class="hero-content" data-aos="fade-right">
+
+<div class="hero-tag">
+🔥 Official Sabhyata Live Streaming Agency
+</div>
+
+<h1>
+Grow Fast With <span>SHYAM AGENCY</span>
+</h1>
+
+<p>
+Join one of India's fastest growing live streaming agencies with 100+ active hosts, PK battles, events, rewards, rankings and 24/7 professional support team.
+</p>
+
+<a href="https://wa.me/919723219561" class="btn-main">
+Join Agency
+</a>
+
+<a href="#services" class="btn-outline-custom">
+Explore More
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="stats">
+
+<div class="container">
+
+<div class="row g-4">
+
+<div class="col-md-3" data-aos="zoom-in">
+<div class="stat-box">
+<i class="fa-solid fa-users"></i>
+<h2 class="counter">100+</h2>
+<p>Active Hosts</p>
+</div>
+</div>
+
+<div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+<div class="stat-box">
+<i class="fa-solid fa-gift"></i>
+<h2>50M+</h2>
+<p>Total Gifts</p>
+</div>
+</div>
+
+<div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+<div class="stat-box">
+<i class="fa-solid fa-trophy"></i>
+<h2>500+</h2>
+<p>PK Battles</p>
+</div>
+</div>
+
+<div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+<div class="stat-box">
+<i class="fa-solid fa-headset"></i>
+<h2>24/7</h2>
+<p>Support</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="section about" id="about">
+
+<div class="container">
+
+<div class="section-title" data-aos="fade-up">
+<h2>About Agency</h2>
+<p>Professional Streaming Management Team</p>
+</div>
+
+<div class="row align-items-center g-5">
+
+<div class="col-lg-6" data-aos="fade-right">
+
+<div class="about-img">
+<img src="about.jpeg">
+</div>
+
+</div>
+
+<div class="col-lg-6" data-aos="fade-left">
+
+<div class="about-content">
+
+<h3>
+Become A Professional Streamer
+</h3>
+
+<p>
+SHYAM AGENCY helps creators grow on Sabhyata Live with complete guidance, daily activity support, host management, PK battle planning and ranking growth support.
+</p>
+
+<p>
+Whether you are a new host or experienced streamer, our team provides complete professional support to increase your earnings and audience engagement.
+</p>
+
+<a href="https://wa.me/919723219561" class="btn-main mt-3">
+Start Streaming
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="section services" id="services">
+
+<div class="container">
+
+<div class="section-title" data-aos="fade-up">
+<h2>Our Services</h2>
+<p>Everything You Need For Streaming Success</p>
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4" data-aos="fade-up">
+<div class="service-card">
+<i class="fa-solid fa-video"></i>
+<h4>Live Streaming</h4>
+<p>
+Professional support for video and audio live streaming hosts.
+</p>
+</div>
+</div>
+
+<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+<div class="service-card">
+<i class="fa-solid fa-trophy"></i>
+<h4>PK Battles</h4>
+<p>
+Daily PK battles, rankings and high competition events.
+</p>
+</div>
+</div>
+
+<div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+<div class="service-card">
+<i class="fa-solid fa-coins"></i>
+<h4>High Earnings</h4>
+<p>
+Increase your monthly earnings with agency support.
+</p>
+</div>
+</div>
+
+<div class="col-lg-4" data-aos="fade-up">
+<div class="service-card">
+<i class="fa-solid fa-users"></i>
+<h4>Host Management</h4>
+<p>
+Professional host management and daily growth strategies.
+</p>
+</div>
+</div>
+
+<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+<div class="service-card">
+<i class="fa-solid fa-headset"></i>
+<h4>24/7 Support</h4>
+<p>
+Dedicated support team for every host and streamer.
+</p>
+</div>
+</div>
+
+<div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+<div class="service-card">
+<i class="fa-solid fa-medal"></i>
+<h4>Agency Events</h4>
+<p>
+Weekly agency events, rewards and host competitions.
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- HOSTS -->
+
+<section class="section hosts" id="hosts">
+
+<div class="container">
+
+<div class="section-title" data-aos="fade-up">
+<h2>Top Hosts</h2>
+<p>Professional Streamers Of Our Agency</p>
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4" data-aos="zoom-in">
+
+<div class="host-card">
+
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+<h4>Host Angel</h4>
+
+<p>ID : 78654321</p>
+
+<p>Top Female Host</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+
+<div class="host-card">
+
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+
+<h4>Host Rocky</h4>
+
+<p>ID : 98214567</p>
+
+<p>PK Battle Winner</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+
+<div class="host-card">
+
+<img src="https://randomuser.me/api/portraits/women/68.jpg">
+
+<h4>Host Queen</h4>
+
+<p>ID : 56782341</p>
+
+<p>Event Star Host</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="section contact" id="contact">
+
+<div class="container">
+
+<div class="section-title" data-aos="fade-up">
+<h2>Contact Us</h2>
+<p>Connect With SHYAM AGENCY Team</p>
+</div>
+
+<div class="row g-4">
+
+<!-- WHATSAPP -->
+
+<div class="col-lg-4" data-aos="fade-up">
+
+<a href="https://wa.me/919723219561" target="_blank" style="text-decoration:none;">
+
+<div class="contact-box">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+<h4>WhatsApp</h4>
+
+<p>+91 9723219561</p>
+
+</div>
+
+</a>
+
+</div>
+
+<!-- EMAIL -->
+
+<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+
+<a href="mailto:jangir.lokesh94@gmail.com" style="text-decoration:none;">
+
+<div class="contact-box">
+
+<i class="fa-solid fa-envelope"></i>
+
+<h4>Email</h4>
+
+<p>jangir.lokesh94@gmail.com</p>
+
+</div>
+
+</a>
+
+</div>
+
+<!-- LOCATION -->
+
+<div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+
+<div class="contact-box">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h4>Location</h4>
+
+<p>India</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<h3 class="mb-3">
+SHYAM AGENCY
+</h3>
+
+<p>
+Professional Sabhyata Live Streaming Management Team
+</p>
+
+<div class="social-icons mt-4">
+
+<a href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-youtube"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-telegram"></i>
+</a>
+
+</div>
+
+<p class="mt-4 mb-0">
+© 2026 SHYAM AGENCY. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+<!-- FLOATING BUTTONS -->
+
+<a href="tel:+919723219561" class="call-btn">
+<i class="fa-solid fa-phone"></i>
+</a>
+
+<a href="https://wa.me/919723219561" class="whatsapp-btn">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Bootstrap -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS -->
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+duration:1000,
+once:true
+});
+
+/* NAVBAR SCROLL EFFECT */
+
+window.addEventListener("scroll",function(){
+
+const navbar=document.getElementById("navbar");
+
+navbar.classList.toggle("scrolled",window.scrollY>50);
+
+});
+
+</script>
+
+</body>
+</html>
