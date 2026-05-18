@@ -685,6 +685,77 @@ font-size:22px;
 }
 
 }
+/* HERO IMAGE */
+
+.hero-image{
+width:100%;
+margin-top:80px;
+overflow:hidden;
+background:#050816;
+}
+
+.hero-image img{
+width:100%;
+height:auto;
+display:block;
+object-fit:cover;
+}
+
+/* HERO CONTENT SECTION */
+
+.hero-content-section{
+padding:70px 0;
+background:#050816;
+text-align:center;
+}
+
+.hero-content{
+max-width:850px;
+margin:auto;
+}
+
+.hero-content h1{
+font-size:65px;
+font-weight:800;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:18px;
+color:#cbd5e1;
+line-height:1.8;
+margin-bottom:35px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero-image{
+margin-top:70px;
+}
+
+.hero-content-section{
+padding:50px 20px;
+}
+
+.hero-content h1{
+font-size:36px;
+}
+
+.hero-content p{
+font-size:15px;
+}
+
+.btn-main,
+.btn-outline-custom{
+display:block;
+width:100%;
+margin:12px auto;
+}
+
+}  
 
 
 </style>
@@ -740,13 +811,15 @@ font-size:22px;
 
 <section class="hero">
 
+<div class="hero-image">
+
+<img src="hero.jpeg" alt="SHYAM AGENCY HERO IMAGE">
+
+</div>
+
 <div class="container">
 
-<div class="row align-items-center">
-
-<div class="col-lg-8">
-
-<div class="hero-content" data-aos="fade-right">
+<div class="hero-content text-center" data-aos="fade-up">
 
 <div class="hero-tag">
 🔥 Official Sabhyata Live Streaming Agency
@@ -772,12 +845,7 @@ Explore More
 
 </div>
 
-</div>
-
-</div>
-
 </section>
-
 <!-- STATS -->
 
 <section class="stats">
